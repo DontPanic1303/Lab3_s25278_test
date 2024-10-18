@@ -1,3 +1,4 @@
+s25278 Marcin Milewski 11c
 Jest to repozytorium gdzie tertowałem działanie Workflows więc jakoś commitów jest bardzo niska. Bardziej jakościowe commity wysyłałem na repozytorium organizacji.
 
 README - Projekt Przetwarzania Danych
