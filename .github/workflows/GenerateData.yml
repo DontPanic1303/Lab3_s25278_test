@@ -13,7 +13,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install gspread oauth2client pandas scikit-learn
+          pip install gspread oauth2client pandas scikit-learn faker
 
       - name: Clone Lab2 repository
         run: git clone https://${{ secrets.GH_TOKEN }}@github.com/PJATK-ASI-2024/Lab2---Obr-bka-danych.git
