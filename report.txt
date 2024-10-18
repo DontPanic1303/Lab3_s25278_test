@@ -1,3 +1,0 @@
-Raport z przetwarzania danych:
-Procent danych, które zostały zmienione: 0.69%
-Procent danych, które zostały usunięte: 1.90%
