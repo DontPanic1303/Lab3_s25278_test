@@ -1,6 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 import logging
+import numpy as np
 
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -16,6 +17,25 @@ logging.info("Dane zostały pomyślnie wczytane.")
 
 df.replace(-1, pd.NA, inplace=True)
 logging.info("Wartości -1 zostały zastąpione przez NaN.")
+
+def is_valid_time_format(time_str):
+    if pd.isna(time_str):
+        return False
+    try:
+        hours, minutes = map(int, time_str.split(':'))
+        if 0 <= hours <= 23 and 0 <= minutes <= 59:
+            return True
+        else:
+            return False
+    except (ValueError, AttributeError):
+        return False
+
+time_columns = ['Czas Początkowy Podróży', 'Czas Końcowy Podróży']
+for time_column in time_columns:
+    if time_column in df.columns:
+        invalid_time_count = df[time_column].apply(lambda x: not is_valid_time_format(x)).sum()
+        df[time_column] = df[time_column].apply(lambda x: x if is_valid_time_format(x) else np.nan)
+        logging.info(f"W kolumnie '{time_column}' znaleziono {invalid_time_count} nieprawidłowych wartości, które zastąpiono NaN.")
 
 original_row_count = len(df)
 logging.info(f"Liczba wierszy przed czyszczeniem: {original_row_count}")

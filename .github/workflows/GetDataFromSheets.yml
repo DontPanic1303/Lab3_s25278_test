@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install gspread oauth2client pandas scikit-learn
+          pip install gspread oauth2client pandas scikit-learn numpy
 
       - name: Fetch Google Sheets data
         env:
