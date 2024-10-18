@@ -32,8 +32,9 @@ except Exception as e:
     logging.error(f"Błąd podczas wczytywania pliku CSV: {e}")
     raise
 
+logging.info("Zastąpienie NaN na -1")
 df.replace([np.inf, -np.inf], np.nan, inplace=True)
-df.fillna(0, inplace=True)
+df.fillna(-1, inplace=True)
 
 spreadsheet_id = '1cafA7Adj9U97x9-uzY2DyHWOJnqGKv0QZNPyl5AfMIg'
 try:

@@ -14,6 +14,9 @@ logging.info("Rozpoczęcie odczytu danych z pliku.")
 df = pd.read_csv(file_path)
 logging.info("Dane zostały pomyślnie wczytane.")
 
+df.replace(-1, pd.NA, inplace=True)
+logging.info("Wartości -1 zostały zastąpione przez NaN.")
+
 original_row_count = len(df)
 logging.info(f"Liczba wierszy przed czyszczeniem: {original_row_count}")
 
