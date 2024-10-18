@@ -28,5 +28,4 @@ jobs:
           GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
         run: |
           echo "$GOOGLE_SHEETS_CREDENTIALS" > creds.json
-          cd ..
           python3 SendData.py
