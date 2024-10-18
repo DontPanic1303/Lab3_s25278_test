@@ -1,0 +1,16 @@
+2024-10-17 18:41:16,923 - INFO - Liczba wierszy przed czyszczeniem: 1000
+2024-10-17 18:41:53,444 - INFO - Rozpoczęcie odczytu danych z pliku.
+2024-10-17 18:41:53,446 - INFO - Dane zostały pomyślnie wczytane.
+2024-10-17 18:41:53,446 - INFO - Liczba wierszy przed czyszczeniem: 1000
+2024-10-17 18:41:53,447 - INFO - Liczba usuniętych wierszy: 19
+2024-10-17 18:41:53,448 - INFO - W kolumnie 'Wiek' uzupełniono 8 brakujących wartości.
+2024-10-17 18:41:53,448 - INFO - W kolumnie 'Średnie Zarobki' uzupełniono 7 brakujących wartości.
+2024-10-17 18:41:53,449 - INFO - W kolumnie 'Płeć' uzupełniono 8 brakujących wartości.
+2024-10-17 18:41:53,449 - INFO - W kolumnie 'Wykształcenie' uzupełniono 4 brakujących wartości.
+2024-10-17 18:41:53,450 - INFO - W kolumnie 'Czas Początkowy Podróży' uzupełniono 8 brakujących wartości.
+2024-10-17 18:41:53,450 - INFO - W kolumnie 'Czas Końcowy Podróży' uzupełniono 10 brakujących wartości.
+2024-10-17 18:41:53,451 - INFO - W kolumnie 'Cel Podróży' uzupełniono 3 brakujących wartości.
+2024-10-17 18:41:53,451 - INFO - Kolumna 'Czas Początkowy Podróży' została pomyślnie przetworzona na minuty.
+2024-10-17 18:41:53,452 - INFO - Kolumna 'Czas Końcowy Podróży' została pomyślnie przetworzona na minuty.
+2024-10-17 18:41:53,458 - INFO - Dane zostały pomyślnie zapisane do pliku 'cleaned_data_student_25278.csv'.
+2024-10-17 18:41:53,458 - INFO - Raport został zapisany do pliku 'report.txt'.

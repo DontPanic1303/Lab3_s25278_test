@@ -1,0 +1,39 @@
+name: Get Data From Sheets
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install gspread oauth2client pandas scikit-learn
+
+      - name: Fetch Google Sheets data
+        env:
+          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+        run: |
+          echo "$GOOGLE_SHEETS_CREDENTIALS" > creds.json
+          python3 GetData.py
+
+      - name: Run data processing script
+        run: |
+          python CleanData.py
+
+      - name: Display report
+        run: |
+          cat report.txt
