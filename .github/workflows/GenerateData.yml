@@ -1,4 +1,4 @@
-name: Generate Data
+name: Generate Data And Send It To Google Sheets
 
 on:
   workflow_dispatch:

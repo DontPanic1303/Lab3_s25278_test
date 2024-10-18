@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cff379c4-2dbf-43f0-be31-be9f95a71d58" name="Changes" comment="test8">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/GetDataFromSheets.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/GetDataFromSheets.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/GenerateData.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/GenerateData.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/GetDataFromSheets.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/GetDataAndCleanIT.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CleanData.py" beforeDir="false" afterPath="$PROJECT_DIR$/CleanData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GetData.py" beforeDir="false" afterPath="$PROJECT_DIR$/GetData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SendData.py" beforeDir="false" afterPath="$PROJECT_DIR$/SendData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requrements.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +46,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Szkola/S7/ASI/Test",
+    "last_opened_file_path": "D:/Szkola/S7/ASI/Lab2_s25278_test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,6 +68,7 @@
       <workItem from="1729185301826" duration="1010000" />
       <workItem from="1729193467966" duration="286000" />
       <workItem from="1729239615808" duration="1887000" />
+      <workItem from="1729257557570" duration="2589000" />
     </task>
     <task id="LOCAL-00001" summary="Code fix">
       <option name="closed" value="true" />
