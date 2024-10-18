@@ -13,7 +13,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install gspread oauth2client pandas scikit-learn faker
+          pip install gspread oauth2client pandas scikit-learn faker requests --upgrade
 
       - name: Clone Lab2 repository
         run: git clone https://${{ secrets.GH_TOKEN }}@github.com/PJATK-ASI-2024/Lab2---Obr-bka-danych.git
@@ -28,4 +28,8 @@ jobs:
           GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
         run: |
           echo "$GOOGLE_SHEETS_CREDENTIALS" > creds.json
+          cd ..
           python3 SendData.py
+
+      - name: Clean up credentials
+        run: rm creds.json
