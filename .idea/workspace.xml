@@ -57,7 +57,7 @@
       <workItem from="1729177457157" duration="6060000" />
       <workItem from="1729185301826" duration="1010000" />
       <workItem from="1729193467966" duration="286000" />
-      <workItem from="1729239615808" duration="18000" />
+      <workItem from="1729239615808" duration="171000" />
     </task>
     <task id="LOCAL-00001" summary="Code fix">
       <option name="closed" value="true" />
@@ -99,7 +99,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729193746604</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add ghp secret key to GenerateData.yml">
+      <option name="closed" value="true" />
+      <created>1729239647916</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1729239647917</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
