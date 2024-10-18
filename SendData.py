@@ -2,6 +2,7 @@ import gspread
 import pandas as pd
 from oauth2client.service_account import ServiceAccountCredentials
 import logging
+import numpy as np
 
 logging.basicConfig(
     level=logging.INFO,
@@ -30,6 +31,9 @@ try:
 except Exception as e:
     logging.error(f"Błąd podczas wczytywania pliku CSV: {e}")
     raise
+
+df.replace([np.inf, -np.inf], np.nan, inplace=True)
+df.fillna(0, inplace=True)
 
 spreadsheet_id = '1cafA7Adj9U97x9-uzY2DyHWOJnqGKv0QZNPyl5AfMIg'
 try:
