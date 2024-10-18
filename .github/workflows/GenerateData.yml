@@ -11,12 +11,12 @@ jobs:
       - name: Checkout original repository
         uses: actions/checkout@v3
 
-      - name: Clone Lab2 repository
-        run: git clone https://${{ secrets.GH_TOKEN }}@github.com/PJATK-ASI-2024/Lab2---Obr-bka-danych.git
-
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
+
+      - name: Clone Lab2 repository
+        run: git clone https://${{ secrets.GH_TOKEN }}@github.com/PJATK-ASI-2024/Lab2---Obr-bka-danych.git
 
       - name: Run data processing script
         run: |
