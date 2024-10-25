@@ -5,6 +5,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import StandardScaler
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
 import os
 
 df = pd.read_csv('CollegeDistance.csv')
@@ -21,14 +23,24 @@ print(df.describe())
 output_dir = './output'
 os.makedirs(output_dir, exist_ok=True)
 
-plt.figure(figsize=(10,6))
-df.hist(bins=50, figsize=(20,15))
+plt.figure(figsize=(10, 6))
+df.hist(bins=50, figsize=(20, 15))
 plt.savefig(f'{output_dir}/data_distribution.png')
 
 X = df.drop('score', axis=1)
 y = df['score']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+categorical_features = ['gender', 'ethnicity', 'region']
+column_transformer = ColumnTransformer(
+    transformers=[
+        ('cat', OneHotEncoder(), categorical_features)
+    ],
+    remainder='passthrough'
+)
+
+X_encoded = column_transformer.fit_transform(X)
+
+X_train, X_test, y_train, y_test = train_test_split(X_encoded, y, test_size=0.2, random_state=42)
 
 scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)

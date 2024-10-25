@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cff379c4-2dbf-43f0-be31-be9f95a71d58" name="Changes" comment="Clean main branch getting ready to Lab3">
-      <change afterPath="$PROJECT_DIR$/analyze_and_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/GetDataAndCleanIT.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/GetDataAndCleanIT.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Lab-2_s25278.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Lab-2_s25278.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyze_and_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyze_and_train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +37,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Szkola/S7/ASI/Lab-3_s25278",
+    "last_opened_file_path": "D:/Szkola/S7/ASI/Lab3_s25278_test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -66,6 +63,7 @@
       <workItem from="1729241660207" duration="135000" />
       <workItem from="1729257546263" duration="11000" />
       <workItem from="1729779086584" duration="1834000" />
+      <workItem from="1729862390357" duration="50000" />
     </task>
     <task id="LOCAL-00001" summary="Code fix">
       <option name="closed" value="true" />
