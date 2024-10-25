@@ -1,4 +1,4 @@
-name: Get Data From Sheets And Clean It
+name: Get Data From Sheets
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install gspread oauth2client pandas scikit-learn numpy
+          pip install gspread oauth2client pandas scikit-learn numpy matplotlib
 
       - name: Fetch Google Sheets data
         env:
@@ -30,10 +30,12 @@ jobs:
           echo "$GOOGLE_SHEETS_CREDENTIALS" > creds.json
           python3 GetData.py
 
-      - name: Run data processing script
+      - name: Analyze and train model
         run: |
-          python CleanData.py
-
-      - name: Display report
-        run: |
-          cat report.txt
+          python3 analyze_and_train.py
+          
+      - name: Upload results
+        uses: actions/upload-artifact@v2
+        with:
+          name: model-report
+          path: ./output

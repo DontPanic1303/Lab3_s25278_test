@@ -28,7 +28,7 @@ except Exception as e:
 
 sheet_id = '1cafA7Adj9U97x9-uzY2DyHWOJnqGKv0QZNPyl5AfMIg'
 try:
-    sheet = client.open_by_key(sheet_id).sheet1
+    sheet = client.open_by_key(sheet_id).get_worksheet(1)
     logging.info("Arkusz został pomyślnie otwarty.")
 except Exception as e:
     logging.error(f"Błąd podczas otwierania arkusza: {e}")
@@ -42,7 +42,7 @@ except Exception as e:
     raise
 
 df = pd.DataFrame(data)
-csv_filename = 'data_student_25278.csv'
+csv_filename = 'CollegeDistance.csv'
 try:
     df.to_csv(csv_filename, index=False)
     logging.info(f'Dane zostały zapisane do pliku {csv_filename}.')
