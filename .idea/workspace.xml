@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff379c4-2dbf-43f0-be31-be9f95a71d58" name="Changes" comment="Clean main branch getting ready to Lab3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="cff379c4-2dbf-43f0-be31-be9f95a71d58" name="Changes" comment="test1">
       <change beforePath="$PROJECT_DIR$/analyze_and_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyze_and_train.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +62,7 @@
       <workItem from="1729241660207" duration="135000" />
       <workItem from="1729257546263" duration="11000" />
       <workItem from="1729779086584" duration="1834000" />
-      <workItem from="1729862390357" duration="50000" />
+      <workItem from="1729862390357" duration="261000" />
     </task>
     <task id="LOCAL-00001" summary="Code fix">
       <option name="closed" value="true" />
@@ -121,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729779175513</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test1">
+      <option name="closed" value="true" />
+      <created>1729862456514</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729862456514</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +142,8 @@
     <MESSAGE value="Add ghp secret key to GenerateData.yml" />
     <MESSAGE value="Fix cod in CleanData.py, SendData.py" />
     <MESSAGE value="Clean main branch getting ready to Lab3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean main branch getting ready to Lab3" />
+    <MESSAGE value="test1" />
+    <option name="LAST_COMMIT_MESSAGE" value="test1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Lab_2_s25278$SendData.coverage" NAME="SendData Coverage Results" MODIFIED="1729179866118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

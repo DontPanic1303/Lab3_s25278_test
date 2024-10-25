@@ -30,7 +30,7 @@ plt.savefig(f'{output_dir}/data_distribution.png')
 X = df.drop('score', axis=1)
 y = df['score']
 
-categorical_features = ['gender', 'ethnicity', 'region']
+categorical_features = ['gender', 'ethnicity', 'region', 'fcollege', 'mcollege', 'home', 'urban', 'income']
 column_transformer = ColumnTransformer(
     transformers=[
         ('cat', OneHotEncoder(), categorical_features)
