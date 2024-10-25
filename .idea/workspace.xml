@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cff379c4-2dbf-43f0-be31-be9f95a71d58" name="Changes" comment="test2">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/GetDataAndCleanIT.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/GetDataAndCleanIT.yml" afterDir="false" />
+    <list default="true" id="cff379c4-2dbf-43f0-be31-be9f95a71d58" name="Changes" comment="test3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyze_and_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyze_and_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +63,7 @@
       <workItem from="1729241660207" duration="135000" />
       <workItem from="1729257546263" duration="11000" />
       <workItem from="1729779086584" duration="1834000" />
-      <workItem from="1729862390357" duration="727000" />
+      <workItem from="1729862390357" duration="830000" />
     </task>
     <task id="LOCAL-00001" summary="Code fix">
       <option name="closed" value="true" />
@@ -139,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729862684532</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test3">
+      <option name="closed" value="true" />
+      <created>1729863137538</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729863137538</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +161,8 @@
     <MESSAGE value="Clean main branch getting ready to Lab3" />
     <MESSAGE value="test1" />
     <MESSAGE value="test2" />
-    <option name="LAST_COMMIT_MESSAGE" value="test2" />
+    <MESSAGE value="test3" />
+    <option name="LAST_COMMIT_MESSAGE" value="test3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Lab_2_s25278$SendData.coverage" NAME="SendData Coverage Results" MODIFIED="1729179866118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
