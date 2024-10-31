@@ -32,7 +32,7 @@ jobs:
 
       - name: Analyze and train model
         run: |
-          python3 analyze_and_train.py
+          python3 train_model.py
           
       - name: Upload results
         uses: actions/upload-artifact@v3
