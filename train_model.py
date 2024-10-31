@@ -1,14 +1,12 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.neural_network import MLPRegressor
 from sklearn.preprocessing import StandardScaler
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
+import joblib
 import os
 
 df = pd.read_csv('CollegeDistance.csv')
@@ -48,25 +46,21 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 
-models = {
-    "Linear Regression": LinearRegression(),
-    "Random Forest": RandomForestRegressor(random_state=42),
-    "Neural Network": MLPRegressor(random_state=42, max_iter=500)
-}
+model = RandomForestRegressor(random_state=42)
+model.fit(X_train_scaled, y_train)
 
 results = {}
 
-for model_name, model in models.items():
-    model.fit(X_train_scaled, y_train)
-    y_pred = model.predict(X_test_scaled)
+y_pred = model.predict(X_test_scaled)
+mse = mean_squared_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
 
-    mse = mean_squared_error(y_test, y_pred)
-    r2 = r2_score(y_test, y_pred)
+print(f"Random Forest - MSE: {mse:.2f}, R²: {r2:.2f}")
 
-    results[model_name] = {"MSE": mse, "R²": r2}
+with open(f'{output_dir}/model_performance.txt', 'w') as f:
+    f.write(f"Random Forest - MSE: {mse:.2f}, R²: {r2:.2f}\n")
 
-    print(f"{model_name} - MSE: {mse:.2f}, R²: {r2:.2f}")
-
-with open(f'{output_dir}/model_performance_comparison.txt', 'w') as f:
-    for model_name, metrics in results.items():
-        f.write(f"{model_name}: MSE = {metrics['MSE']:.2f}, R² = {metrics['R²']:.2f}\n")
+joblib.dump(model, "model.pkl")
+joblib.dump(scaler, "scaler.pkl")
+joblib.dump(column_transformer, "transformer.pkl")
+print("Model, scaler, and transformer have been saved.")

@@ -4,3 +4,5 @@ matplotlib
 scikit-learn
 gspread
 oauth2client
+flask
+joblib
